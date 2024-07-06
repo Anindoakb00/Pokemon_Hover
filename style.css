@@ -1,0 +1,64 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+
+html,body{
+
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+   /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+.card{
+    position: absolute;/* from this line to next 3 line are used to set the card in the middle instead of using flex syntax in the main  */
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);  
+    height: 300px;
+    width: 230px;
+    border: 1px solid salmon;
+    border-radius: 20px;
+    overflow: hidden;/* USed instead of border radius of hidden*/
+}
+
+#card_1{
+    z-index: 10;
+}
+#card_2{
+    z-index: 9;/* here z index mean closed to screen. which z value is much, he will more closer to screen. It follow discending order*/
+    rotate: -8deg;
+}
+#card_2:hover{
+    z-index: 11;
+}
+#card_3{
+    z-index: 8;
+    rotate: -16deg;
+}
+#card_3:hover{
+    z-index: 12;
+}
+
+
+
+#card_4{
+    z-index: 7;
+    rotate: -24deg;
+}
+#card_4:hover{
+    z-index: 13;
+}
+img{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /*border-radius: 20px;*/
+}
